@@ -1,0 +1,41 @@
+# Node
+node_modules/
+assets/dist/
+
+# PHP Composer
+vendor/
+
+# Build
+*.zip
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Env
+.env
+.env.*
+
+# Private config
+config/deploy/*
+!config/deploy/.gitkeep
+
+# Test
+coverage/
+
+# WordPress
+wp-content/
+wp-config.php
+
+# Others
+*.bak
+*.tmp

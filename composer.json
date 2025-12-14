@@ -1,0 +1,13 @@
+{
+  "name": "baddif/not-wasted",
+  "description": "A PWA-enabled WordPress plugin built with React.",
+  "type": "wordpress-plugin",
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "NotWasted\\": "includes/"
+    }
+  }
+}

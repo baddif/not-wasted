@@ -1,0 +1,19 @@
+name: Build Plugin
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build assets
+        run: npm run build
+        working-directory: ./assets
+      - name: Composer install
+        run: composer install --no-dev --optimize-autoloader
+      - name: Archive plugin
+        run: zip -r not-wasted.zip . -x '*.git*' 'node_modules/*' 'vendor/*' 'assets/dist/*' 'tests/*' 'config/deploy/*' '*.env*'

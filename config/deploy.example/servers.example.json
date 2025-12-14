@@ -1,0 +1,18 @@
+{
+  "staging": {
+    "host": "YOUR_STAGING_IP",
+    "port": 22,
+    "username": "YOUR_USERNAME",
+    "privateKey": "/path/to/your/ssh/key",
+    "remotePath": "/var/www/html/wp-content/plugins/not-wasted",
+    "wordpressUrl": "https://staging.yourdomain.com"
+  },
+  "production": {
+    "host": "YOUR_PRODUCTION_IP",
+    "port": 22,
+    "username": "YOUR_USERNAME",
+    "privateKey": "/path/to/your/ssh/key",
+    "remotePath": "/var/www/html/wp-content/plugins/not-wasted",
+    "wordpressUrl": "https://yourdomain.com"
+  }
+}
